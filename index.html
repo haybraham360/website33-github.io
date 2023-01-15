@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>E-Commerce Website Design</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+<section class="header">
+        <nav> 
+            <a href="index2.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+             <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>   
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+         </nav>  
+         
+<div class="text-box">
+    <h1>World's Biggest Store</h1>
+    <p>Welcome to the best e-commerce store out there, go through our page to get all the products you need, <br>at your fingertip.</br></p>
+    <a href="" class="hero-btn">Visit Us To Know More </a>
+</div>
+
+</section>
+
+<section class= "product">
+
+    <h1>Products we sell</h1>
+    <p>All products sold here are of the highest quality</p>
+    <div class="row">
+        <div class= "product-col">
+            <h3>Intermediate</h3>
+            <p>When each customer comes into our stuff, each enquiry is an experience in which the purchases then made are oof real value</p>
+        </div>
+        <div class= "product-col">
+            <h3>Degree</h3>
+            <p>When each customer comes into our stuff, each enquiry is an experience in which the purchases then made are oof real value</p>
+        </div>
+        <div class= "product-col">
+            <h3>Post Graduation</h3>
+            <p>When each customer comes into our stuff, each enquiry is an experience in which the purchases then made are oof real value</p>
+        </div>
+    
+
+    </div>
+</section>
+
+<!---store section-->
+<section class="stores">
+    <h1>Our Global store</h1>
+    <p>We have stores all over the world, where you can get all of our products</p>
+
+    <div class="row">
+        <div class="store-col">
+            <img src="images/car1.png.jpg">
+            <div class= "layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="store-col">
+            <img src="images/shoe1.png.jpg">
+            <div class= "layer">
+                <h3>ABUJA</h3>
+            </div>
+        </div><div class="store-col">
+            <img src="images/young1.png.jpg">
+            <div class= "layer">
+                <h3>NEWYORK</h3>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<!---facilities---->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Our facilities are also available verywhere around the world, to all our customers around the world</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/operating.png">
+            <h3>World Class Operating Room</h3>
+            <p>This is a modern operating room with all the required amenities</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/fitness.png">
+            <h3>World Class Fitness Room</h3>
+            <p>This is a modern fitness room with all the required amenities</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/relax.png">
+            <h3>Relaxation space</h3>
+            <p>A cool relaxation space</p>
+        </div>
+    </div>
+</section>
+
+<!---testimonials-->
+<section class="testimonials">
+    <h1>What Our Clients Say</h1>
+    <p>Get to know what our customers think about us</p>
+
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="images/workimage.png.jpg">
+            <div>
+                <p>A brand like no other, run with full efficiency and customer satisfaction</p>
+                <h3>Abraham Adewole(CEO)</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-o"></i>
+
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="images/QUEEN.png.jpg">
+            <div>
+                <p>Best brand out there</p>
+                <h3>Eunice</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-star-half-o"></i>
+
+            </div>
+        </div>
+
+        
+
+    </div>
+</section>
+
+<section class="cta">
+    <h1>Sign Up To Be A Registered Customer <br> Anywhere Around The World</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<!----footer -->
+<section class= "footer">
+    <h4>About Us</h4>
+    <p>The best e-commerce brand in all of Africa, where you can buy and sell with ease</p>
+
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+<p>Written by <i class="fa fa-heart-o"></i>Abraham</p>
+  
+
+</section>
+
+<!------JavaScript for Toggle Menu------       -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
